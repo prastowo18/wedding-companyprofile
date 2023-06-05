@@ -15,7 +15,7 @@ export function MyFeature() {
           laborum voluptatum animi rerum alias nulla architecto?"
         />
 
-        <div className="flex flex-col items-center w-4/5 mt-10 lg:flex-row lg:gap-10 md:px-10 lg:py-20">
+        <div className="flex flex-col items-center w-4/5 mt-10 md:w-full lg:w-4/5 lg:flex-row lg:gap-10 md:px-10 lg:py-20">
           <div className="grid grid-cols-1 gap-y-10 md:gap-y-0 md:gap-10 md:grid-cols-3">
             {Array(9)
               .fill(undefined)

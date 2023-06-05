@@ -1,5 +1,12 @@
 "use client";
-import { Hero, WhyChooseMe, MyFeature } from "./components";
+import {
+  Hero,
+  WhyChooseMe,
+  MyFeature,
+  LangkahPembuatan,
+  ChooseDesign,
+  Price,
+} from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +14,9 @@ export default function Home() {
       <Hero />
       <WhyChooseMe />
       <MyFeature />
+      <LangkahPembuatan />
+      <ChooseDesign />
+      <Price />
     </main>
   );
 }
