@@ -1,9 +1,12 @@
 import React, { useMemo } from "react";
-import { Gabriela } from "next/font/google";
+import { Courgette, Playfair_Display } from "next/font/google";
 import Image from "next/image";
 
-const gabriela = Gabriela({
+const courgette = Courgette({
   weight: "400",
+  subsets: ["latin"],
+});
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
@@ -12,29 +15,25 @@ export function Hero() {
     return (
       <header className="" id="hero">
         <div
-          className="w-full bg-bottom bg-cover"
-          // style={{
-          //   backgroundImage: "url(/assets/heroimg.jpg)",
-          // }}
+          className="w-full bg-cover"
+          style={{
+            backgroundImage: "url(/assets/herobg.png)",
+          }}
         >
-          <div className="flex flex-row items-center w-full h-full px-5 md:px-16 lg:px-32 py-32 md:py-[15rem]">
-            <div className="md:w-1/2">
+          <div className="flex flex-row items-center w-full h-full px-5 bg-white/50 py-28 md:px-16 lg:px-32">
+            <div className="mt-20 md:mt-36 md:w-1/2">
               <div className="">
-                <h1 className="text-3xl font-bold text-black lg:text-5xl">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <h1
+                  className={`${courgette.className} text-3xl font-bold lg:text-5xl text-[#393B44] drop-shadow-lg`}
+                >
+                  Beritakan Kabar Baik dan Moment Bahagiamu!
                 </h1>
               </div>
               <div className="flex flex-col mt-4 text-base text-gray-500">
-                <p className="">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Expedita fuga in earum quasi iure, deserunt ratione ab vitae
-                  ipsa autem.
+                <p className={`${playfairDisplay.className} text-[#393B44]`}>
+                  Divory akan membantu kamu dalam menyebarkan berita baik dan
+                  bahagia dengan lebih cepat, mudah dan efesien.
                 </p>
-                <div className="">
-                  <a className="text-base font-semibold text-blue-300 underline transition duration-150 ease-in-out cursor-pointer hover:text-blue-400">
-                    How to order?
-                  </a>
-                </div>
                 <div className="py-10">
                   <a
                     href="#"
@@ -45,7 +44,7 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden mt-20 md:block">
               <Image
                 src="/assets/heroimg2.png"
                 alt="hero-img"
