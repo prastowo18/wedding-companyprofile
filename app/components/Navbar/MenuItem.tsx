@@ -12,7 +12,7 @@ export function MenuItem(props: IProps) {
   const renderMain = useMemo(() => {
     return (
       <li
-        className={`${active} cursor-pointer hover:border-b-2 hover:text-amber-500 hover:border-b-amber-500 transition duration-150 list-none`}
+        className={`${active} cursor-pointer text-white text-lg hover:border-b-2 hover:text-slate-200 hover:border-b-slate-200 transition duration-150 list-none`}
       >
         <a href={href} onClick={() => setActiveName(href)}>
           {title}

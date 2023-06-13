@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <WhyChooseMe />
       <MyFeature />
-      <LangkahPembuatan />
       <ChooseDesign />
+      <LangkahPembuatan />
       <Price />
     </main>
   );

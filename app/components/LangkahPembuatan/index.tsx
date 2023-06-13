@@ -6,7 +6,7 @@ export function LangkahPembuatan() {
     return (
       <section
         id="langkahpembuatan"
-        className="flex flex-col items-center w-full px-2 pt-20 lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-2 pt-20 lg:px-28 lg:py-28 bg-[#D6E0F0]"
       >
         <SectionTitle
           title="Langkah Pembuatan"
@@ -18,7 +18,10 @@ export function LangkahPembuatan() {
           {Array(3)
             .fill(undefined)
             .map((item: any, idx: number) => (
-              <div className="px-5 py-8 rounded-md shadow-md" key={idx}>
+              <div
+                className="px-5 py-8 bg-white rounded-md shadow-md"
+                key={idx}
+              >
                 <h5 className="mb-3 text-xl font-semibold">Registrasi</h5>
                 <p className="text-[0.975rem] text-gray-500">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.

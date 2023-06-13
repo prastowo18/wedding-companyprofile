@@ -37,7 +37,7 @@ export function Hero() {
                 <div className="py-10">
                   <a
                     href="#"
-                    className="rounded-md bg-blue-400 px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    className="rounded-md bg-[#393B44] px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                   >
                     Get Started
                   </a>

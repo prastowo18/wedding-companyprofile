@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 
 interface IProps {
   title: string;
+  textColor?: string;
   titleDesc?: string;
   desc: string;
 }
@@ -13,12 +14,12 @@ const courgette = Courgette({
 });
 
 export function SectionTitle(props: IProps) {
-  const { titleDesc, title, desc } = props;
+  const { titleDesc, title, desc, textColor } = props;
   const renderMain = useMemo(() => {
     return (
       <div className="flex flex-col w-full gap-2 pb-10 text-center md:w-2/3">
         <h4
-          className={`${courgette.className} text-2xl font-semibold md:text-3xl drop-shadow-md`}
+          className={`${courgette.className} text-2xl font-semibold md:text-3xl drop-shadow-md ${textColor}`}
         >
           {title}
         </h4>
@@ -27,7 +28,7 @@ export function SectionTitle(props: IProps) {
         </div>
       </div>
     );
-  }, [titleDesc, title, desc]);
+  }, [titleDesc, title, desc, textColor]);
 
   return renderMain;
 }

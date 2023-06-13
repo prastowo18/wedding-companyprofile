@@ -7,7 +7,7 @@ export function MyFeature() {
     return (
       <section
         id="whychooseme"
-        className="flex flex-col items-center w-full px-2 pt-5 lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-2 pt-5 lg:px-28 lg:py-28 bg-[#D6E0F0]"
       >
         <SectionTitle
           title="Fitur Kami"
@@ -20,7 +20,10 @@ export function MyFeature() {
             {Array(9)
               .fill(undefined)
               .map((item: any, idx: any) => (
-                <div className="px-2 pt-5 pb-10 rounded-md shadow-md" key={idx}>
+                <div
+                  className="px-2 pt-5 pb-10 mb-5 bg-white rounded-md shadow-md"
+                  key={idx}
+                >
                   <div className="w-20 p-5 mx-auto rounded-full shadow-md">
                     <Image
                       src="/assets/money.png"
