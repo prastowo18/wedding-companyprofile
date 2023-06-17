@@ -7,7 +7,7 @@ export function WhyChooseMe() {
     return (
       <section
         id="whychooseme"
-        className="flex flex-col items-center w-full px-2 pt-5 lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-8 py-20 select-none lg:px-28 lg:py-28"
       >
         <SectionTitle
           title="Mengapa memilih kami?"

@@ -5,6 +5,9 @@ import MyFeature from "./MyFeature";
 import LangkahPembuatan from "./LangkahPembuatan";
 import ChooseDesign from "./ChooseDesign";
 import Price from "./Price";
+import PertanyaanUmum from "./PertanyaanUmum";
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 export {
   Navbar,
@@ -14,4 +17,7 @@ export {
   LangkahPembuatan,
   ChooseDesign,
   Price,
+  PertanyaanUmum,
+  Footer,
+  Contact,
 };

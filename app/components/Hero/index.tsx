@@ -13,9 +13,9 @@ const playfairDisplay = Playfair_Display({
 export function Hero() {
   const renderMain = useMemo(() => {
     return (
-      <header className="" id="hero">
+      <header className="" id="home">
         <div
-          className="w-full bg-cover"
+          className="w-full bg-cover select-none"
           style={{
             backgroundImage: "url(/assets/herobg.png)",
           }}
@@ -36,10 +36,10 @@ export function Hero() {
                 </p>
                 <div className="py-10">
                   <a
-                    href="#"
-                    className="rounded-md bg-[#393B44] px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    href="#langkahpembuatan"
+                    className="rounded-md bg-[#393B44] px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-[#393B44]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                   >
-                    Get Started
+                    Buat Undangan
                   </a>
                 </div>
               </div>

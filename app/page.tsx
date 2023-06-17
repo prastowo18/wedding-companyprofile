@@ -7,6 +7,9 @@ import {
   ChooseDesign,
   Price,
   Navbar,
+  PertanyaanUmum,
+  Footer,
+  Contact,
 } from "./components";
 
 export default function Home() {
@@ -15,10 +18,13 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhyChooseMe />
+      <LangkahPembuatan />
       <MyFeature />
       <ChooseDesign />
-      <LangkahPembuatan />
       <Price />
+      <PertanyaanUmum />
+      <Contact />
+      <Footer />
     </main>
   );
 }

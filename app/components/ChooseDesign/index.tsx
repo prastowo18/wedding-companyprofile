@@ -7,7 +7,7 @@ export function ChooseDesign() {
     return (
       <section
         id="choosedesign"
-        className="flex flex-col items-center w-full px-2 pt-20 lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-2 py-20 lg:px-28 lg:py-28"
       >
         <SectionTitle
           title="Pilihan Desain"

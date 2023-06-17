@@ -7,7 +7,7 @@ html {
 }
 
 .active {
-  @apply text-amber-500 border-b-2 border-b-amber-400;
+  @apply text-[#393B44] border-b-2 border-b-[#393B44];
 }
 
 /* :root {

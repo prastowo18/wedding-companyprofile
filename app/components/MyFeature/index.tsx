@@ -6,8 +6,8 @@ export function MyFeature() {
   const renderMain = useMemo(() => {
     return (
       <section
-        id="whychooseme"
-        className="flex flex-col items-center w-full px-2 pt-5 lg:px-28 lg:py-28 bg-[#D6E0F0]"
+        id="myfeature"
+        className="flex flex-col items-center w-full px-8 py-20 lg:px-28 lg:py-28 bg-[#D6E0F0]"
       >
         <SectionTitle
           title="Fitur Kami"
@@ -21,7 +21,7 @@ export function MyFeature() {
               .fill(undefined)
               .map((item: any, idx: any) => (
                 <div
-                  className="px-2 pt-5 pb-10 mb-5 bg-white rounded-md shadow-md"
+                  className="px-2 pt-5 pb-10 bg-white rounded-md shadow-md md:mb-5"
                   key={idx}
                 >
                   <div className="w-20 p-5 mx-auto rounded-full shadow-md">

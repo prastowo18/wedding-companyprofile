@@ -6,7 +6,7 @@ export function Price() {
     return (
       <section
         id="price"
-        className="flex flex-col items-center w-full px-2 pt-20 lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-2 py-20 lg:px-28 lg:py-28 bg-[#D6E0F0]"
       >
         <SectionTitle
           title="Harga Undangan"
@@ -18,8 +18,8 @@ export function Price() {
             {Array(3)
               .fill(undefined)
               .map((e: any, idx: any) => (
-                <div className="rounded-md shadow-md" key={idx}>
-                  <div className="py-5 text-center bg-blue-400 rounded-t-md">
+                <div className="bg-white rounded-md shadow-md" key={idx}>
+                  <div className="py-5 text-center bg-[#87A8D0] rounded-t-md">
                     <h2 className="text-xl font-semibold text-white">Silver</h2>
                   </div>
                   <div className="flex flex-row items-center justify-center mt-5 text-center">
@@ -51,7 +51,7 @@ export function Price() {
                   <div className="my-5 text-center">
                     <a
                       href="#"
-                      className="px-3 py-2 text-sm font-semibold text-white bg-blue-400 rounded-md shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                      className="px-3 py-2 text-sm font-semibold text-white bg-[#393B44] rounded-md shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                     >
                       Pesan
                     </a>
