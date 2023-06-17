@@ -10,7 +10,7 @@ export function Contact() {
       >
         <div className="md:px-24">
           <h5 className="text-2xl font-bold uppercase">Divory</h5>
-          <p className="text-gray-500 md:w-1/2 lg:1/3">
+          <p className="text-gray-500 md:w-1/2 lg:w-1/3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eos.
             Eum vero maxime itaque, id incidunt aspernatur? Rem, temporibus
             illum?
