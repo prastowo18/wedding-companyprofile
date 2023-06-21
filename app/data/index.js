@@ -41,21 +41,21 @@ export const data = {
   ],
   myfeature: [
     {
-      title: "Lorem, ipsum.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam",
-      img: "/assets/money.png",
+      title: "Custom Nama Tamu",
+      desc: "Sertakan nama tamu agak terasa lebih dekat.",
+      img: "/assets/write.png",
       alt: "myfeature-img1",
     },
     {
-      title: "Lorem, ipsum.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam",
-      img: "/assets/money.png",
+      title: "Jumlah Tamu Tanpa Batas",
+      desc: "Jumlah tamu undangan tanpa batas dan tidak ada tambahan biaya.",
+      img: "/assets/team.png",
       alt: "myfeature-img2",
     },
     {
-      title: "Lorem, ipsum.",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam",
-      img: "/assets/money.png",
+      title: "Custom Desain",
+      desc: "Bisa custom desain dari pilihan yang sudah disediakan.",
+      img: "/assets/paint-brush.png",
       alt: "myfeature-img3",
     },
     {
