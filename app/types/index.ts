@@ -1,25 +1,30 @@
-export type TechUseType = {
-  name: string;
+export type whyChoosemeList = {
+  title: string;
+  desc: string;
+  src: string;
+  alt: string;
 };
 
-export type PortfolioListType = {
-  title?: string;
-  img?: string;
-  short_desc?: string;
-  tech_use: Array<TechUseType>;
-  link_code?: string;
-  link_live_demo?: string;
+export type langkahPembuatanList = {
+  title: string;
+  desc: string;
 };
 
-export type LandingList = {
-  heroDesc: string;
-  aboutMe: string;
+export type myFeatureList = {
+  title: string;
+  desc: string;
+  img: string;
+  alt: string;
 };
 
-export type IApiResponseLandingList = {
-  data: Array<LandingList>;
+export type IApiResponseWhyChooseme = {
+  data: Array<whyChoosemeList>;
 };
 
-export type IApiResponse = {
-  result: PortfolioListType;
+export type IApiResponseLangkahPembuatan = {
+  data: Array<langkahPembuatanList>;
+};
+
+export type IApiResponseMyFeature = {
+  data: Array<myFeatureList>;
 };

@@ -19,7 +19,7 @@ export function ChooseDesign() {
           {Array(3)
             .fill(undefined)
             .map((item: any, idx: number) => (
-              <div className="rounded-md shadow-md" key={idx}>
+              <div className="bg-white rounded-md shadow-md" key={idx}>
                 <div className="">
                   <Image
                     src="/assets/choosetheme1.png"

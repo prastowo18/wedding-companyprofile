@@ -1,10 +1,30 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import MenuItem from "./MenuItem";
+import useComponentVisible from "@/app/hooks/useComponentVisible";
 
 export function Navbar() {
-  const [navMobile, setNavMobile] = useState<boolean>(false);
   const [activeName, setActiveName] = useState<any>("#home");
+  const [scrollHight, setScrollHight] = useState<number>(0);
+
+  const { isComponentVisible, ref, setIsComponentVisible } =
+    useComponentVisible(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollHight(scrollY);
+    });
+  }, [setActiveName]);
+
+  useEffect(() => {
+    if (!isComponentVisible) {
+      scrollHight < 2200 && setActiveName("#home");
+      scrollHight > 2200 && setActiveName("#myfeature");
+      scrollHight > 3500 && setActiveName("#choosedesign");
+      scrollHight > 4600 && setActiveName("#price");
+      scrollHight > 5100 && setActiveName("#pertanyaanumum");
+    }
+  }, [scrollHight, isComponentVisible]);
 
   const renderMain = useMemo(() => {
     return (
@@ -46,10 +66,19 @@ export function Navbar() {
                 active={activeName === "#price" ? "active" : ""}
                 setActiveName={() => setActiveName("#price")}
               />
+              <MenuItem
+                href="#pertanyaanumum"
+                title="Contact"
+                active={activeName === "#pertanyaanumum" ? "active" : ""}
+                setActiveName={() => setActiveName("#pertanyaanumum")}
+              />
             </div>
+
             <div
               className="mt-3 text-white cursor-pointer md:hidden"
-              onClick={() => setNavMobile(!navMobile)}
+              onClick={() => {
+                setIsComponentVisible(true);
+              }}
             >
               <svg
                 viewBox="0 0 700 1000"
@@ -60,8 +89,12 @@ export function Navbar() {
                 <path d="M650 450c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50c-13.333 0-25-5-35-15S0 513.333 0 500c0-13.333 4.667-25 14-35s21.333-15 36-15h600M50 350c-13.333 0-25-5-35-15S0 313.333 0 300c0-13.333 4.667-25 14-35s21.333-15 36-15h600c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50m600 300c14.667 0 26.667 5 36 15 9.333 10 14 21.667 14 35 0 13.333-5 25-15 35s-21.667 15-35 15H50c-13.333 0-25-5-35-15S0 713.333 0 700c0-13.333 4.667-25 14-35s21.333-15 36-15h600" />
               </svg>
             </div>
-            {navMobile ? (
-              <div className="absolute w-1/2 rounded-md bg-white/90 right-5 top-[5.5rem]">
+
+            <div
+              className="absolute w-1/2 rounded-md bg-white/90 right-5 top-[5.5rem] md:hidden"
+              ref={ref}
+            >
+              {isComponentVisible && (
                 <div className="flex flex-col p-3 text-lg">
                   <a
                     href="#home"
@@ -99,20 +132,31 @@ export function Navbar() {
                   <a
                     href="#price"
                     className={`py-1 ${
-                      activeName === "#price" ? "text-[#87A8D0]" : ""
+                      activeName === "#price"
+                        ? "text-[#87A8D0] border-b-2 border-b-[#87A8D0]"
+                        : "border-b-2 border-b-gray-300"
                     }`}
                     onClick={() => setActiveName("#price")}
                   >
                     Price
                   </a>
+                  <a
+                    href="#pertanyaanumum"
+                    className={`py-1 ${
+                      activeName === "#pertanyaanumum" ? "text-[#87A8D0]" : ""
+                    }`}
+                    onClick={() => setActiveName("#pertanyaanumum")}
+                  >
+                    Contact
+                  </a>
                 </div>
-              </div>
-            ) : null}
+              )}
+            </div>
           </div>
         </nav>
       </>
     );
-  }, [navMobile, activeName]);
+  }, [activeName, scrollHight, isComponentVisible, ref, setIsComponentVisible]);
 
   return renderMain;
 }

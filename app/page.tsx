@@ -12,14 +12,16 @@ import {
   Contact,
 } from "./components";
 
+import { data } from "./data";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <WhyChooseMe />
-      <LangkahPembuatan />
-      <MyFeature />
+      <WhyChooseMe data={data.whychooseme} />
+      <LangkahPembuatan data={data.langkahpembuatan} />
+      <MyFeature data={data.myfeature} />
       <ChooseDesign />
       <Price />
       <PertanyaanUmum />
