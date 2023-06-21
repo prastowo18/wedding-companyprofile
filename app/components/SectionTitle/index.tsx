@@ -19,7 +19,7 @@ export function SectionTitle(props: IProps) {
     return (
       <div className="flex flex-col w-full gap-2 pb-10 text-center md:w-2/3">
         <h4
-          className={`${courgette.className} text-2xl font-semibold md:text-3xl drop-shadow-md ${textColor}`}
+          className={`${courgette.className} text-2xl text-[#393B44] font-semibold md:text-3xl drop-shadow-md ${textColor}`}
         >
           {title}
         </h4>

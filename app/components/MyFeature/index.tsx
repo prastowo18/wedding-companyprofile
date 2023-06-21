@@ -9,7 +9,7 @@ export function MyFeature(props: IApiResponseMyFeature) {
     return (
       <section
         id="myfeature"
-        className="flex flex-col items-center w-full px-8 py-20 lg:px-28 lg:py-28 bg-[#D6E0F0]"
+        className="flex flex-col items-center w-full px-8 py-20 lg:px-28 lg:py-28 "
       >
         <SectionTitle
           title="Fitur Kami"

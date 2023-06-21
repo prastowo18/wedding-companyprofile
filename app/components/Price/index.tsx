@@ -6,7 +6,7 @@ export function Price() {
     return (
       <section
         id="price"
-        className="flex flex-col items-center w-full px-2 py-20 lg:px-28 lg:py-28 bg-[#D6E0F0]"
+        className="flex flex-col items-center w-full px-2 py-20 lg:px-28 lg:py-28"
       >
         <SectionTitle
           title="Harga Undangan"

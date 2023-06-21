@@ -6,7 +6,7 @@ export function PertanyaanUmum() {
     return (
       <section
         id="pertanyaanumum"
-        className="flex flex-col items-center w-full px-8 py-20 select-none lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-8 py-20 select-none lg:px-28 lg:py-28 bg-[#D6E0F0]"
       >
         <SectionTitle
           title="Pertanyaan Umum"

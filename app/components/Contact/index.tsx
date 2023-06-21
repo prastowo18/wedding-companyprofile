@@ -6,11 +6,11 @@ export function Contact() {
     return (
       <section
         id="contact"
-        className="flex flex-col w-full px-8 pb-10 select-none lg:px-28 lg:pb-20"
+        className="flex flex-col w-full px-8 py-10 select-none lg:px-28 lg:py-20"
       >
-        <div className="md:px-24">
+        <div className="text-[#393B44] md:px-24">
           <h5 className="text-2xl font-bold uppercase">Divory</h5>
-          <p className="text-gray-500 md:w-1/2 lg:w-1/3">
+          <p className="md:w-1/2 lg:w-1/3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eos.
             Eum vero maxime itaque, id incidunt aspernatur? Rem, temporibus
             illum?
