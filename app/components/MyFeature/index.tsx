@@ -23,7 +23,7 @@ export function MyFeature(props: IApiResponseMyFeature) {
                 className="px-2 pt-5 pb-10 bg-white rounded-md shadow-md md:mb-5"
                 key={idx}
               >
-                <div className="w-20 p-5 mx-auto rounded-full shadow-md">
+                <div className="w-20 p-5 mx-auto bg-white rounded-full shadow-md">
                   <Image
                     src={item.img}
                     alt={item.alt}
@@ -33,10 +33,10 @@ export function MyFeature(props: IApiResponseMyFeature) {
                   />
                 </div>
                 <div className="mt-4 text-center">
-                  <h2 className="font-semibold text-[0.975rem] mb-4">
-                    {item.title}
-                  </h2>
-                  <p className="px-3 text-sm text-gray-500">{item.desc}</p>
+                  <h2 className="text-[1.125rem] mb-2">{item.title}</h2>
+                  <p className="px-5 md:px-2 text-[1rem] text-gray-500">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             ))}

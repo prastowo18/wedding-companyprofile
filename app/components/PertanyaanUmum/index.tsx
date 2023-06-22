@@ -1,7 +1,12 @@
 import React, { useMemo } from "react";
 import SectionTitle from "../SectionTitle";
+import {
+  IApiResponsePertanyaanUmumList,
+  pertanyaanUmumList,
+} from "@/app/types";
 
-export function PertanyaanUmum() {
+export function PertanyaanUmum(props: IApiResponsePertanyaanUmumList) {
+  const { data } = props;
   const renderMain = useMemo(() => {
     return (
       <section
@@ -15,19 +20,14 @@ export function PertanyaanUmum() {
         />
 
         <div className="grid grid-cols-1 md:pt-10 md:gap-10 md:grid-cols-2 md:px-24">
-          {Array(6)
-            .fill(undefined)
-            .map((e: any, idx: any) => (
-              <div className="py-5" key={idx}>
-                <h4 className="text-lg font-semibold md:text-2xl">
-                  Lorem ipsum dolor sit amet.
-                </h4>
-                <p className="text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum, minima.
-                </p>
-              </div>
-            ))}
+          {data.map((item: pertanyaanUmumList, idx: number) => (
+            <div className="py-5" key={idx}>
+              <h4 className="text-lg font-semibold md:text-2xl">
+                {item.title}
+              </h4>
+              <p className="text-gray-500">{item.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
     );

@@ -18,11 +18,11 @@ export function LangkahPembuatan(props: IApiResponseLangkahPembuatan) {
           desc="Hanya membutuhkan beberapa langkah saja hingga undangan kamu siap digunakan."
         />
 
-        <div className="grid grid-cols-1 gap-5 px-5 md:mt-20 lg:px-20 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 px-5 md:mt-20 lg:px-20 md:grid-cols-2 lg:grid-cols-5">
           {data.map((item: langkahPembuatanList, idx: number) => (
             <div className="px-5 py-8 bg-white rounded-md shadow-md" key={idx}>
-              <h5 className="mb-3 text-xl font-semibold">{item.title}</h5>
-              <p className="text-[0.975rem] text-gray-500">{item.desc}</p>
+              <h5 className="mb-3 text-2xl">{item.title}</h5>
+              <p className="text-[1rem] text-gray-500">{item.desc}</p>
             </div>
           ))}
         </div>

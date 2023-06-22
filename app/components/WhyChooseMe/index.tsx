@@ -2,6 +2,11 @@ import React, { useMemo } from "react";
 import SectionTitle from "../SectionTitle";
 import Image from "next/image";
 import { IApiResponseWhyChooseme, whyChoosemeList } from "@/app/types";
+import { Playfair_Display } from "next/font/google";
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+});
 
 export function WhyChooseMe(props: IApiResponseWhyChooseme) {
   const { data } = props;
@@ -10,14 +15,14 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
     return (
       <section
         id="whychooseme"
-        className="flex flex-col items-center w-full px-8 py-20 select-none lg:px-28 lg:py-28"
+        className="flex flex-col items-center w-full px-4 py-20 select-none lg:px-28 lg:py-28"
       >
         <SectionTitle
           title="Mengapa memilih kami?"
-          desc="Karena kami hadir dengan memberikan harga yang kompetitif dengan fitur yang lengkap, bisa custom dari pilihan template yang ada, dan tentunya kamu akan memberikan pelayanan terbaik untuk anda."
+          desc="Karena kami hadir dengan memberikan harga yang kompetitif dengan fitur yang lengkap, bisa custom dari pilihan template yang ada, dan tentunya kami akan memberikan pelayanan terbaik untuk anda."
         />
 
-        <div className="flex flex-col items-center w-full lg:flex-row lg:gap-10 md:px-10 lg:py-20">
+        <div className="flex flex-col items-center w-full lg:flex-row lg:gap-5 md:px-10 lg:px-5 lg:py-20">
           <div className="w-4/5">
             <Image
               src="/assets/whychoosemeimg.svg"
@@ -25,6 +30,7 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
               width={500}
               height={500}
               priority
+              className="mx-auto"
             />
           </div>
           <div className="grid items-center grid-cols-1 gap-5 px-1 py-10 lg:py-0 md:grid-cols-2">
@@ -33,7 +39,7 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
                 className="flex flex-col gap-3 p-1 lg:items-center lg:flex-row"
                 key={idx}
               >
-                <div className="w-16 p-4 rounded-full shadow-md lg:w-16">
+                <div className="w-[4.1rem] p-4 rounded-full shadow-md lg:w-16 bg-white">
                   <Image
                     src={item.src}
                     alt="money-img"
@@ -43,10 +49,8 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
                   />
                 </div>
                 <div className="flex-1">
-                  <h2 className="mb-1 font-semibold text-[1rem]">
-                    {item.title}
-                  </h2>
-                  <p className="text-[0.975rem] text-gray-500">{item.desc}</p>
+                  <h2 className="mb-1 text-lg font-semibold">{item.title}</h2>
+                  <p className="text-[1rem] text-gray-500">{item.desc}</p>
                 </div>
               </div>
             ))}

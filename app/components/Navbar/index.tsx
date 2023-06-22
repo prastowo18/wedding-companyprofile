@@ -20,8 +20,8 @@ export function Navbar() {
     if (!isComponentVisible) {
       scrollHight < 2200 && setActiveName("#home");
       scrollHight > 2200 && setActiveName("#myfeature");
-      scrollHight > 3500 && setActiveName("#choosedesign");
-      scrollHight > 4600 && setActiveName("#price");
+      scrollHight > 3400 && setActiveName("#choosedesign");
+      scrollHight > 4400 && setActiveName("#price");
       scrollHight > 5100 && setActiveName("#pertanyaanumum");
     }
   }, [scrollHight, isComponentVisible]);
@@ -30,7 +30,7 @@ export function Navbar() {
     return (
       <>
         <nav className="flex justify-center items-center w-full h-10 px-2 py-14 pt-8 lg:px-16 fixed bg-[#87A8D0] -top-1 rounded-b-[2rem] shadow-md drop-shadow-md z-50">
-          <div className="relative flex items-center justify-between w-full px-5 mt-6 md:mt-3">
+          <div className="relative flex items-center justify-between w-full px-5 mt-3 md:mt-3">
             <div className="mt-2">
               <Image
                 src="/assets/logo.png"

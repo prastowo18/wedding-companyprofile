@@ -11,9 +11,8 @@ export function Contact() {
         <div className="text-[#393B44] md:px-24">
           <h5 className="text-2xl font-bold uppercase">Divory</h5>
           <p className="md:w-1/2 lg:w-1/3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eos.
-            Eum vero maxime itaque, id incidunt aspernatur? Rem, temporibus
-            illum?
+            Divory adalah layanan membuat undangan pernikahan berbentuk sebuah
+            website yang mana dapat diakses dan di bagikan kapapun.
           </p>
           <div className="shadow-md w-[1.7em] h-[1.7em] rounded-md mt-2 md:mt-5">
             <svg

@@ -22,9 +22,9 @@ export default function Home() {
       <WhyChooseMe data={data.whychooseme} />
       <LangkahPembuatan data={data.langkahpembuatan} />
       <MyFeature data={data.myfeature} />
-      <ChooseDesign />
-      <Price />
-      <PertanyaanUmum />
+      <ChooseDesign data={data.design} />
+      <Price data={data.pricelist} />
+      <PertanyaanUmum data={data.pertanyaanUmum} />
       <Contact />
       <Footer />
     </main>

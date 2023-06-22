@@ -20,8 +20,8 @@ export function Hero() {
             backgroundImage: "url(/assets/herobg.png)",
           }}
         >
-          <div className="flex flex-row items-center w-full h-full px-5 bg-white/50 py-28 md:px-16 lg:px-32">
-            <div className="mt-20 md:mt-36 md:w-1/2">
+          <div className="flex flex-row items-center w-full h-full px-5 bg-white/50 py-28 md:px-16 lg:px-32 gap-x-10">
+            <div className="mt-20 md:mt-36 md:w-2/3 lg:w-1/2">
               <div className="">
                 <h1
                   className={`${courgette.className} text-3xl font-bold lg:text-5xl text-[#393B44] drop-shadow-lg`}
@@ -30,7 +30,9 @@ export function Hero() {
                 </h1>
               </div>
               <div className="flex flex-col mt-4 text-base text-gray-500">
-                <p className={`${playfairDisplay.className} text-[#393B44]`}>
+                <p
+                  className={`${playfairDisplay.className} text-[#393B44] text-lg`}
+                >
                   Divory akan membantu kamu dalam menyebarkan berita baik dan
                   bahagia dengan lebih cepat, mudah dan efesien.
                 </p>
@@ -51,7 +53,7 @@ export function Hero() {
                 width={500}
                 height={500}
                 priority
-                className="w-full"
+                className="w-full lg:ml-20"
               />
             </div>
           </div>
