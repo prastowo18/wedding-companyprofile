@@ -12,7 +12,7 @@ export const metadata = {
     google: "nphSXlhL1xf4XmKrTmbuxibdVbapjknGCkGTCbkN-Kw",
   },
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
   },
