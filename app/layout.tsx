@@ -9,7 +9,7 @@ export const metadata = {
   title: "Divory | Digital Invitation Story",
   description: "Wedding Invitation",
   verification: {
-    google: "google-site-verification=909190919091",
+    google: "google-site-verification: googleefed730476b018bf.html",
   },
   robots: {
     index: false,
