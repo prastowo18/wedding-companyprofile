@@ -135,7 +135,7 @@ export const data = {
     {
       type: "Bronze",
       price: "99.000",
-      desc: "Gratis 7 Hari Uang Kembali",
+      desc: "Garansi 7 Hari Uang Kembali",
       itemList: [
         {
           title: "Masa Aktif Selamanya",
@@ -207,7 +207,7 @@ export const data = {
     {
       type: "Silver",
       price: "129.000",
-      desc: "Gratis 7 Hari Uang Kembali",
+      desc: "Garansi 7 Hari Uang Kembali",
       itemList: [
         {
           title: "Masa Aktif Selamanya",
@@ -279,7 +279,7 @@ export const data = {
     {
       type: "Gold",
       price: "179.000",
-      desc: "Gratis 7 Hari Uang Kembali",
+      desc: "Garansi 7 Hari Uang Kembali",
       itemList: [
         {
           title: "Masa Aktif Selamanya",
@@ -367,7 +367,7 @@ export const data = {
       desc: "Untuk text default bisa custom sesuai dengan keinginanmu.",
     },
     {
-      title: "Apa yang dimaksud dengan 7 hari uang kembali?",
+      title: "Apa yang dimaksud dengan garansi 7 hari uang kembali?",
       desc: "Jika dalam 7 hari setelah anda melakukan pembayaran pelayanan kami kurang memuaskan uang anda akan kembalikan.",
     },
   ],
