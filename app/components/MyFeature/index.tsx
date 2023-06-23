@@ -33,7 +33,7 @@ export function MyFeature(props: IApiResponseMyFeature) {
                   />
                 </div>
                 <div className="mt-4 text-center">
-                  <h2 className="text-[1.125rem] mb-2">{item.title}</h2>
+                  <h1 className="text-[1.125rem] mb-2">{item.title}</h1>
                   <p className="px-5 md:px-2 text-[1rem] text-gray-500">
                     {item.desc}
                   </p>

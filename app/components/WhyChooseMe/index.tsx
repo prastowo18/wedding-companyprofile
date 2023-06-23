@@ -49,7 +49,7 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
                   />
                 </div>
                 <div className="flex-1">
-                  <h2 className="mb-1 text-lg font-semibold">{item.title}</h2>
+                  <h1 className="mb-1 text-lg font-semibold">{item.title}</h1>
                   <p className="text-[1rem] text-gray-700">{item.desc}</p>
                 </div>
               </div>

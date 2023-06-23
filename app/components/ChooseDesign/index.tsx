@@ -32,13 +32,13 @@ export function ChooseDesign(props: IApiResponseDesignList) {
                 />
               </div>
               <div className="px-3 py-5">
-                <h5 className="mb-3 text-xl font-semibold">{item.title}</h5>
+                <h1 className="mb-3 text-xl font-semibold">{item.title}</h1>
                 <p className="text-[1rem] text-gray-500 mb-5">{item.desc}</p>
                 <div className="flex flex-row items-center gap-3">
                   <a
                     href={item.link}
                     target="_blank"
-                    className="px-3 py-2 text-[0.8125rem] font-semibold text-[#87A8D0] transition duration-150 ease-in-out rounded-md shadow-lg hover:text-[#87A8D0]/80 border-2"
+                    className="px-3 py-2 text-[0.8125rem] font-semibold text-[#7c9abf] transition duration-150 ease-in-out rounded-md shadow-lg hover:text-[#87A8D0]/80 border-2"
                   >
                     Lihat Desain
                   </a>
