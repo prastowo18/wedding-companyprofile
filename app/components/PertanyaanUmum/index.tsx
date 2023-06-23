@@ -22,9 +22,9 @@ export function PertanyaanUmum(props: IApiResponsePertanyaanUmumList) {
         <div className="grid grid-cols-1 md:pt-10 md:gap-10 md:grid-cols-2 md:px-24">
           {data.map((item: pertanyaanUmumList, idx: number) => (
             <div className="py-5" key={idx}>
-              <h4 className="text-lg font-semibold md:text-2xl">
+              <h1 className="text-lg font-semibold md:text-2xl">
                 {item.title}
-              </h4>
+              </h1>
               <p className="text-gray-500">{item.desc}</p>
             </div>
           ))}

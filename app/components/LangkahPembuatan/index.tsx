@@ -21,7 +21,7 @@ export function LangkahPembuatan(props: IApiResponseLangkahPembuatan) {
         <div className="grid grid-cols-1 gap-5 px-5 md:mt-20 lg:px-20 md:grid-cols-2 lg:grid-cols-5">
           {data.map((item: langkahPembuatanList, idx: number) => (
             <div className="px-5 py-8 bg-white rounded-md shadow-md" key={idx}>
-              <h5 className="mb-3 text-2xl">{item.title}</h5>
+              <h1 className="mb-3 text-2xl">{item.title}</h1>
               <p className="text-[1rem] text-gray-500">{item.desc}</p>
             </div>
           ))}
