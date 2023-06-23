@@ -28,7 +28,7 @@ export function SectionTitle(props: IProps) {
           {title}
         </h1>
         <div className={`${playfairDisplay.className}`}>
-          <p className="text-[1rem] text-gray-500 lg:px-10">{desc}</p>
+          <p className="text-[1rem] text-gray-700 lg:px-10">{desc}</p>
         </div>
       </div>
     );

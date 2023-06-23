@@ -8,7 +8,7 @@ export function Footer() {
           <h5 className="font-semibold text-[#393B44]">© 2023 divory.my.id</h5>
         </div>
         <a
-          className="fixed z-50 flex items-center gap-2 px-5 py-2 text-white bg-[#25D366] rounded-md md:bottom-3 md:right-14 cursor-pointer hover:bg-[#25D366]/80 animate-pulse bottom-10 right-5"
+          className="fixed z-50 flex items-center gap-2 px-5 py-2 text-white bg-[#25D366] rounded-md md:bottom-3 md:right-14 cursor-pointer hover:bg-[#25D366]/80 bottom-10 right-5"
           href="https://wa.me/6285163011814?text=Halo%20Divory,%20Saya%20butuh%20informasi%20lebih%20lanjut"
           target="_blank"
         >

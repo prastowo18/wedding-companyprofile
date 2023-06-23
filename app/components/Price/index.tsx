@@ -20,13 +20,13 @@ export function Price(props: IApiResponsePriceList) {
             {data.map((item: priceList, idx: number) => (
               <div className="bg-white rounded-md shadow-md" key={idx}>
                 <div className="py-5 text-center bg-[#87A8D0] rounded-t-md">
-                  <h2 className="text-xl font-semibold text-white">
+                  <h1 className="text-xl font-semibold text-white">
                     {item.type}
-                  </h2>
+                  </h1>
                 </div>
                 <div className="flex flex-row items-center justify-center mt-5 text-center">
                   <span className="items-start mr-1 -mt-3 text-sm">Rp</span>
-                  <h2 className="text-3xl">{item.price}</h2>
+                  <h1 className="text-3xl">{item.price}</h1>
                 </div>
                 <div className="px-5 pt-8 pb-10">
                   {item.itemList.map((item: itemPrice, idx: number) => (
