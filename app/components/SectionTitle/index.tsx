@@ -22,11 +22,11 @@ export function SectionTitle(props: IProps) {
   const renderMain = useMemo(() => {
     return (
       <div className="flex flex-col w-full gap-2 px-2 pb-10 text-center md:w-2/3">
-        <h4
+        <h1
           className={`${courgette.className} text-[1.875rem] text-[#393B44] font-semibold md:text-3xl drop-shadow-md ${textColor}`}
         >
           {title}
-        </h4>
+        </h1>
         <div className={`${playfairDisplay.className}`}>
           <p className="text-[1rem] text-gray-500 lg:px-10">{desc}</p>
         </div>

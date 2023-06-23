@@ -25,7 +25,7 @@ export function WhyChooseMe(props: IApiResponseWhyChooseme) {
         <div className="flex flex-col items-center w-full lg:flex-row lg:gap-5 md:px-10 lg:px-5 lg:py-20">
           <div className="w-4/5">
             <Image
-              src="/assets/whychoosemeimg.svg"
+              src="/assets-fix/whychoosemeimg.svg"
               alt="aboutme-img"
               width={500}
               height={500}

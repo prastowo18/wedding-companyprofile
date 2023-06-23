@@ -17,7 +17,7 @@ export function Hero() {
         <div
           className="w-full bg-cover select-none"
           style={{
-            backgroundImage: "url(/assets/herobg.png)",
+            backgroundImage: "url(/assets-fix/herobg.webp)",
           }}
         >
           <div className="flex flex-row items-center w-full h-full px-5 bg-white/50 py-28 md:px-16 lg:px-32 gap-x-10">
@@ -46,14 +46,14 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="hidden mt-20 md:block">
+            <div className="hidden w-1/2 mt-20 md:block">
               <Image
-                src="/assets/heroimg2.png"
+                src="/assets-fix/heroimg2.png"
                 alt="hero-img"
-                width={500}
-                height={500}
+                width={1080}
+                height={822}
                 priority
-                className="w-full lg:ml-20"
+                className="lg:ml-20"
               />
             </div>
           </div>

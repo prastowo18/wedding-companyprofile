@@ -33,7 +33,7 @@ export function Navbar() {
           <div className="relative flex items-center justify-between w-full px-5 mt-3 md:mt-3">
             <div className="mt-2">
               <Image
-                src="/assets/logo.png"
+                src="/assets-fix/logo.png"
                 alt="hero-img"
                 width={80}
                 height={80}
